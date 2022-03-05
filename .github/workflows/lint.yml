@@ -1,9 +1,8 @@
 name: lint
-# on – определяет события, которые запускают воркфлоу
 on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions
-      - run: make lint
+      - name: my-step
+        run: make lint
