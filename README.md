@@ -10,3 +10,7 @@ https://asciinema.org/a/LwQybURfQ5JZSWADGyj0ovvcN
 
 ### Brain-calc game:
 https://asciinema.org/a/3p0BXGQEoc6S5GZ70A7PSt8sy
+
+### Brain-gcd game:
+https://asciinema.org/a/gaqHPe5vSwZmPXM1stTzMWL1T
+
