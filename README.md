@@ -5,4 +5,8 @@
 ### GitHubActions status:
 [![lint](https://github.com/rezajkee/python-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/rezajkee/python-project-lvl1/actions/workflows/lint.yml)
 
+### Brain-even game:
 https://asciinema.org/a/LwQybURfQ5JZSWADGyj0ovvcN
+
+### Brain-calc game:
+https://asciinema.org/a/3p0BXGQEoc6S5GZ70A7PSt8sy

@@ -2,11 +2,11 @@
 
 
 from brain_games.game_engine.engine import engine
-from brain_games.games.is_even import is_even_question, is_even_brief
+from brain_games.games.calc import calc_question, calc_brief
 
 
 def main():
-    return engine(is_even_question, is_even_brief)
+    return engine(calc_question, calc_brief)
 
 
 if __name__ == '__main__':
