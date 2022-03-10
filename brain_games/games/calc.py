@@ -10,10 +10,14 @@ def calc_brief():
 def calc_question():
     a = random.randint(1, 10)
     b = random.randint(1, 10)
-    sum, dif, mult = '+', '-', '*'
-    list_of_operations = [sum, dif, mult]
+    list_of_operations = ['+', '-', '*']
     operation = random.choice(list_of_operations)
 
     print(f'Question: {a} {operation} {b}')
-    right_answer = str(eval(str(a) + operation + str(b)))
+    if operation == '+':
+        right_answer = str(a + b)
+    elif operation == '-':
+        right_answer = str(a - b)
+    else:
+        right_answer = str(a * b)
     return right_answer
