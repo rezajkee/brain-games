@@ -4,7 +4,8 @@ import random
 
 
 def calc_brief():
-    return print('What is the result of the expression?')
+    brief = 'What is the result of the expression?'
+    return print(brief)
 
 
 def calc_question():

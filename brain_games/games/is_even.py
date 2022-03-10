@@ -4,7 +4,8 @@ import random
 
 
 def is_even_brief():
-    return print('Answer "yes" if the number is even, otherwise answer "no".')
+    brief = 'Answer "yes" if the number is even, otherwise answer "no".'
+    return print(brief)
 
 
 def is_even_question():

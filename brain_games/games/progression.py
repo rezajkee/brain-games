@@ -4,7 +4,8 @@ import random
 
 
 def progr_brief():
-    return print('What number is missing in the progression?')
+    brief = 'What number is missing in the progression?'
+    return print(brief)
 
 
 def progr_question():

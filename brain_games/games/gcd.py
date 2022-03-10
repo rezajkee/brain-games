@@ -5,7 +5,8 @@ from math import gcd
 
 
 def gcd_brief():
-    return print('Find the greatest common divisor of given numbers.')
+    brief = 'Find the greatest common divisor of given numbers.'
+    return print(brief)
 
 
 def gcd_question():
