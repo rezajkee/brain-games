@@ -17,9 +17,8 @@ def engine(game, brief):
             print('Correct!')
             win_streak += 1
         else:
-            part_one = f"'{user_answer}' is wrong answer ;(. "
-            part_two = f"Correct answer was '{right_answer}'."
-            print(part_one + part_two)
+            print(f"'{user_answer}' is wrong answer ;(.\
+ Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
             break
     if win_streak == 3:
