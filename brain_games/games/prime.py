@@ -12,7 +12,7 @@ def prime_question():
     number = random.randint(1, 100)
     i = 2
     j = 0
-    print('Question: ' + str(number))
+    
     while i * i <= number and j != 1:
         if number % i == 0:
             j = 1
@@ -23,4 +23,5 @@ def prime_question():
         right_answer = 'no'
     else:
         right_answer = 'yes'
+    print('Question: ' + str(number))
     return right_answer
