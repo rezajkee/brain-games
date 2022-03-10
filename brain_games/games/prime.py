@@ -16,9 +16,7 @@ def prime_question():
     while i * i <= number and j != 1:
         if number % i == 0:
             j = 1
-            i += i
-        else:
-            i += 1
+        i += 1
     if j == 1:
         right_answer = 'no'
     elif number == 1:
