@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "5 different math games"
 authors = ["Anton Shefer <rezajkee@mail.ru>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Topic :: Games/Entertainment"
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
