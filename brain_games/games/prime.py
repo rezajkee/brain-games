@@ -12,7 +12,7 @@ def prime_question():
     number = random.randint(1, 100)
     i = 2
     j = 0
-    
+
     while i * i <= number and j != 1:
         if number % i == 0:
             j = 1
