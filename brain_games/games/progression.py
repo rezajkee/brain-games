@@ -3,18 +3,16 @@
 import random
 
 
-def progr_brief():
-    brief = 'What number is missing in the progression?'
-    return print(brief)
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def progr_question():
-    start = random.randint(1, 20)
-    step = random.randint(5, 10)
-    progress = list(range(start, 100, step))
-    length = int(len(progress))
-    hidden_elem = random.randint(0, length - 1)
-    right_answer = str(progress[hidden_elem])
-    progress[hidden_elem] = '..'
-    print('Question: ' + ' '.join(map(str, progress)))
-    return right_answer
+def get_question_and_answer():
+    start_of_progr = random.randint(1, 20)
+    step_of_progr = random.randint(5, 10)
+    progression = list(range(start_of_progr, 100, step_of_progr))
+    length_of_progr = int(len(progression))
+    hidden_elem = random.randint(0, length_of_progr - 1)
+    right_answer = str(progression[hidden_elem])
+    progression[hidden_elem] = '..'
+    question = ' '.join(map(str, progression))
+    return right_answer, question

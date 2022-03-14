@@ -3,25 +3,23 @@
 import random
 
 
-def prime_brief():
-    brief = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    return print(brief)
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def prime_question():
+def get_question_and_answer():
     number = random.randint(1, 100)
-    i = 2
-    j = 0
+    check_index1 = 2
+    check_index2 = 0
 
-    while i * i <= number and j != 1:
-        if number % i == 0:
-            j = 1
-        i += 1
-    if j == 1:
+    while check_index1 * check_index1 <= number and check_index2 != 1:
+        if number % check_index1 == 0:
+            check_index2 = 1
+        check_index1 += 1
+    if check_index2 == 1:
         right_answer = 'no'
     elif number == 1:
         right_answer = 'no'
     else:
         right_answer = 'yes'
-    print('Question: ' + str(number))
-    return right_answer
+    question = str(number)
+    return right_answer, question

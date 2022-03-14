@@ -1,24 +1,22 @@
 """'Calc' question"""
 
 import random
+import operator
 
 
-def calc_brief():
-    brief = 'What is the result of the expression?'
-    return print(brief)
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def calc_question():
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
-    list_of_operations = ['+', '-', '*']
-    operation = random.choice(list_of_operations)
+def get_question_and_answer():
+    operand1 = random.randint(1, 10)
+    operand2 = random.randint(1, 10)
+    operations = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+    }
+    operation = random.choice(list(operations.keys()))
 
-    print(f'Question: {a} {operation} {b}')
-    if operation == '+':
-        right_answer = str(a + b)
-    elif operation == '-':
-        right_answer = str(a - b)
-    else:
-        right_answer = str(a * b)
-    return right_answer
+    right_answer = str(operations[operation](operand1, operand2))
+    question = f'{operand1} {operation} {operand2}'
+    return right_answer, question

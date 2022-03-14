@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
 
-from brain_games.game_engine.engine import engine
-from brain_games.games.prime import prime_question, prime_brief
+from brain_games.engine import start_the_game
+from brain_games.games.prime import get_question_and_answer, DESCRIPTION
 
 
 def main():
-    return engine(prime_question, prime_brief)
+    return start_the_game(get_question_and_answer, DESCRIPTION)
 
 
 if __name__ == '__main__':
