@@ -12,7 +12,7 @@ def start_the_game(get_question_and_answer, DESCRIPTION):
     print(DESCRIPTION)
     while win_streak < 3:
         right_answer, question = get_question_and_answer()
-        print(question)
+        print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if right_answer == user_answer:
             print('Correct!')
