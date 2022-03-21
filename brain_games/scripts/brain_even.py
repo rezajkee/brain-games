@@ -2,7 +2,7 @@
 
 
 from brain_games.engine import start_the_game
-from brain_games.games.is_even import get_question_and_answer, DESCRIPTION
+from brain_games.games.even import get_question_and_answer, DESCRIPTION
 
 
 def main():

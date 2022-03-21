@@ -22,5 +22,5 @@ def start_the_game(get_question_and_answer, DESCRIPTION):
                   f" Correct answer was '{right_answer}'.")
             print(f"Let's try again, {username}!")
             break
-    if win_streak == 3:
+    else:
         print(f'Congratulations, {username}!')
