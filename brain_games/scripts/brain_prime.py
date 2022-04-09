@@ -2,11 +2,12 @@
 
 
 from brain_games.engine import start_the_game
-from brain_games.games.prime import get_question_and_answer, DESCRIPTION
+from brain_games.games import prime
 
 
 def main():
-    return start_the_game(get_question_and_answer, DESCRIPTION)
+    """Start the game 'Brain-Prime'"""
+    start_the_game(prime)
 
 
 if __name__ == '__main__':

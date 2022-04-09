@@ -4,15 +4,15 @@
 import prompt
 
 
-def start_the_game(get_question_and_answer, DESCRIPTION):
+def start_the_game(game):
     print('Welcome to the Brain Games!')
     username = prompt.string('May I have your name? ')
     print(f'Hello, {username}!')
     points_to_win = 3
     points_streak = 0
-    print(DESCRIPTION)
+    print(game.DESCRIPTION)
     while points_streak < points_to_win:
-        right_answer, question = get_question_and_answer()
+        right_answer, question = game.get_question_and_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if right_answer == user_answer:
